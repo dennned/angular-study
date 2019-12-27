@@ -1,0 +1,14 @@
+<!--<p [ngClass]="{-->
+<!--red: backgroundToogle,-->
+<!--blue: !backgroundToogle-->
+<!--}">ets dsfssdf dffds fdsrezfdf sdgsgezfsd dsf sdfds fzefsf dqsf</p>-->
+<!--<br/>-->
+<!--<p [class.blue]="!backgroundToogle">TEST 0</p>-->
+<!--<p [class.red]="backgroundToogle">TEST 1</p>-->
+
+<button (click)="toogle=!toogle">Toogle</button>
+
+<p *ngIf="toogle; else blueP" class="red">RED RED RED</p>
+<ng-template #blueP>
+  <p class="blue">BLUE BLUE BLUE</p>
+</ng-template>

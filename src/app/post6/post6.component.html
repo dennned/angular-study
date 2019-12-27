@@ -1,0 +1,8 @@
+<button (click)="toogle=!toogle">Toogle</button>
+<button (click)="toogle=111">Set 111</button>
+
+<div [ngSwitch]="toogle">
+  <p *ngSwitchCase="true" class="red">RED</p>
+  <p *ngSwitchCase="false" class="blue">blue</p>
+  <p *ngSwitchDefault>default</p>
+</div>

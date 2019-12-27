@@ -1,0 +1,12 @@
+<p>
+  post2 works!
+</p>
+
+<button (click)="backgroundToogle=!backgroundToogle">Toogle</button>
+<div [ngStyle]="{
+  width:'200px',
+  height:'200px',
+  border:'1px solid red',
+  borderRadius:'5px',
+  background: backgroundToogle ? 'red' : 'blue'
+}"></div>
